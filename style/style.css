@@ -1,0 +1,449 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+.hide{
+    display: none;
+}
+/* --------styles for body --------- */
+body{
+    /* ------------font------------ */
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    
+}
+/* --------styles for nav bar ------ */
+nav{
+    background-color: rgba(255, 144, 14, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+    height: 150px;
+    padding: 20px;
+}
+nav > ul{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+}
+nav > h2{
+    font-weight: 700;
+    font-size: 45px;
+    color: #131313;
+}
+nav > a{
+    font-weight: 500;
+    font-size: 18px;
+    color: #424242;
+    
+}
+/* ------------styles for section one --------- */
+
+main{
+}
+.section-one{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 144, 14, 0.1);
+}
+.banner-hadding-title{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    /* margin: 0 auto; */
+    padding:60px 320px ;
+}
+.banner-heading h2{
+    font-weight: 700;
+    font-size: 64px;
+    color: #131313
+    
+}
+.banner-heading p{
+    font-weight: 400;
+    font-size: 16px;
+    color: #727272;
+    text-align: center;
+}
+.banner-title{}
+
+.banner-image{
+   padding: 30px;
+}
+/* ---------styles for section two ------- */
+.section-two{
+   
+    padding: 30px 110px;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+.section-two-left{
+    display: grid;
+    grid-template-columns: repeat(2 ,1fr);
+    row-gap: 15px;
+    column-gap: 15px;
+    width: 70%;
+
+}
+.section-two-right{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+}
+.feature-heading{
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: flex-start;
+}
+.heading h2{ 
+    font-weight: 500;
+    font-size: 45px;
+    color: #727272;
+}
+.heading span{
+    color: #FF900E;
+    font-weight: 700;
+    font-size: 45px;
+}
+.text{}
+
+
+.button p{
+    color: white;
+    background-color: #FF900E;
+    padding: 20px 50px;
+    border-radius: 10px;
+ 
+}
+
+/* ----------------- styles for features section ------------ */
+.section-features{
+    
+    padding: 30px;
+    background-color: #FFFFFF;
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+   
+}
+.section-feature-left{
+    display: flex;
+    flex-direction: column;
+}
+.section-feature-left .features-heading h2{
+    border-left: 2px solid 
+    #FF900E;
+    padding: 20px 5px;  
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+.section-feature-left .features-text p{
+    padding: 25px 50px 30px 0px;
+}
+.features{
+    padding-left: 15px;
+}
+.features h4{
+    color: #131313;
+    font-weight: 600;
+    font-size: 20px;  
+    padding-bottom: 15px;   
+}
+.features p{
+    font-weight: 400;
+    font-size: 16px;
+
+}
+.features div{
+    padding: 30px ;
+}
+.section-feature-right {
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color:#FF900E ;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 10px;
+}
+.experience h1{
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 60px;
+}
+.experience p{
+    font-size: 20px;
+}
+/* ------------------syles for footer ----------- */
+
+.footer{ 
+
+}
+.footer-container-one{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+
+}
+.facts-container{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.heading-of-facts-container{
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+.title-of-facts-container{
+    color: #727272;
+    width: 542px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.div-of-facts{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+
+}
+.fact{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 10px;
+    transition: background 1s linear, color 1s linear,padding 2s linear, box-shadow 2s linear ;
+} 
+.fact:hover{
+    background: linear-gradient(to right, red, blue);
+    color: rgb(245, 239, 239);
+    padding: 10px;
+    box-shadow: 5px 8px 5px rgb(107, 38, 38);
+    border: none;
+}
+/*--------------- styles for footer section two ---------- */
+.footer-section-two{
+    padding:60px ;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.sponsor-info{
+
+}
+.sponspors{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+} 
+.title-of-sponspors{
+    color: #131313;
+    font-weight: 700;
+    font-size: 45px;
+}
+.text-of-sponspors{
+    color: #727272;
+    font-weight: 400;
+    font-size: 16px;
+    width: 542px;
+    height: 52px;
+}
+.footer-sponsor-image{
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+  
+
+}
+
+/* -----------------styles for footer section three----------- */
+
+
+.footer-section-three{
+    background-color:  #FFF4E7;
+    text-align: center;
+    padding: 30px 60px;
+    margin: 60px;
+}
+
+.footer-section-three p{
+    color: #424242;
+    font-weight: 400;
+    font-size: 20px;
+
+}
+
+/*------------- media query ----------- */
+ 
+@media only screen and (max-width:1250px) {
+   .body{ width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+   }
+ 
+}
+
+
+
+@media only screen and (max-width:576px){
+    nav{
+        height: 60px;
+        text-align: center;
+        flex-direction: column;
+        position: relative;
+    }
+    nav > h2{
+        position: relative;
+        margin: 10px auto;
+        text-align: center;
+    }
+    
+    nav > ul {
+        position: absolute;
+        flex-direction: column;
+        left: 10px;
+        top: 60px;
+    }
+    .banner-hadding-title{
+        padding: 30px 100px 0px 100px;
+    }
+    .banner-heading h2{
+        font-weight: 400;
+        font-size: 35px;
+
+        
+    }
+    .banner-heading p{
+        font-weight: 200;
+        font-size: 16px;
+
+    }
+    .banner-image{
+        padding: 10px;
+    }
+    /*----------- meadia for section two -------- */
+    .section-two{
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+
+}
+.section-two-left{
+    grid-template-columns: repeat(1 ,1fr);
+    gap: 5px;
+    width: 100%;
+    padding: 5px;
+    justify-items: center;
+}
+.section-two-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+}
+.feature-heading{
+    align-items: center;
+    width: 100%;
+}
+
+/* --------------media for section feature --------- */
+.section-features{
+    
+
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.experience{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    background-color:#FF900E ;
+    position: static;
+    left: 0px;
+    bottom: 0px;
+    border-radius: 10px;
+    padding: 10px;
+}
+/* ----------media for footer section --------- */
+.footer-container-one{
+    gap: 30px;
+    align-items: center;
+}
+
+.div-of-facts{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    
+}
+
+
+.footer-section-two{
+    padding:10px ;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   align-items: center;
+}
+.footer-sponsor-image{
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+
+}
+.section-feature-right img{
+    position: static;
+    padding: 10px;
+
+
+}
+
+}
